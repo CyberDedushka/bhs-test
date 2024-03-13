@@ -1,0 +1,545 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "YourStackName": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "YourStackName.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/YourStackName": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6",
+              "id": "3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6",
+              "packaging": "zip",
+              "sourceHash": "3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6",
+              "s3BucketParameter": "AssetParameters3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6S3BucketD2694671",
+              "s3KeyParameter": "AssetParameters3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6S3VersionKeyE37ADAD7",
+              "artifactHashParameter": "AssetParameters3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6ArtifactHash4E87AE6E"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:187:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "LambdaTaskStack.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:25:35)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/S3UploadBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3UploadBucketEF2ED902",
+            "trace": [
+              "new Bucket (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1676:22)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:12:26)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/UploadRequestFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadRequestFunctionServiceRoleC2FB4912",
+            "trace": [
+              "new Role (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Function (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/function.ts:688:31)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:25:35)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/UploadRequestFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadRequestFunctionServiceRoleDefaultPolicy69DE0DCC",
+            "trace": [
+              "new Policy (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Bucket.grant (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:917:27)",
+              "Bucket.grantWrite (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:735:17)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:37:18)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/UploadRequestFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadRequestFunction823068EA",
+            "trace": [
+              "new Function (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/function.ts:771:35)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:25:35)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/AssetParameters/3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6S3BucketD2694671",
+            "trace": [
+              "new FileAssetParameters (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "LambdaTaskStack.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:25:35)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/AssetParameters/3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6S3VersionKeyE37ADAD7",
+            "trace": [
+              "new FileAssetParameters (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "LambdaTaskStack.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:25:35)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/AssetParameters/3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters3ec17a613dca5e835d63b43788f92d91073bc5bc20d54f0a322b4040175971f6ArtifactHash4E87AE6E",
+            "trace": [
+              "new FileAssetParameters (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "LambdaTaskStack.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:25:35)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/MyApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApi49610EDF",
+            "trace": [
+              "new HttpApi (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:384:22)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:40:19)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/MyApi/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiDefaultStageB2EF93C6",
+            "trace": [
+              "new HttpStage (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/stage.ts:166:5)",
+              "new HttpApi (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:402:27)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:40:19)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/MyApi/GET--uploads/UploadAssetAPIIntegration/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiGETuploadsUploadAssetAPIIntegrationEA07A548",
+            "trace": [
+              "new HttpIntegration (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/integration.ts:256:19)",
+              "HttpLambdaIntegration._bindToRoute (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/integration.ts:321:26)",
+              "new HttpRoute (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.ts:191:38)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:458:14",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:455:20)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:48:11)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/MyApi/GET--uploads/UploadAssetAPIIntegration-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiGETuploadsUploadAssetAPIIntegrationPermission0E6F84A6",
+            "trace": [
+              "Function.addPermission (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:356:5)",
+              "HttpLambdaIntegration.completeBind (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2-integrations/lib/http/lambda.ts:55:18)",
+              "HttpLambdaIntegration._bindToRoute (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/integration.ts:335:10)",
+              "new HttpRoute (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.ts:191:38)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:458:14",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:455:20)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:48:11)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/MyApi/GET--uploads/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiGETuploadsAEEC1078",
+            "trace": [
+              "new HttpRoute (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/route.ts:227:19)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:458:14",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (/home/user/BHS/lambda-task/node_modules/@aws-cdk/aws-apigatewayv2/lib/http/api.ts:455:20)",
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:48:11)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/APIendpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIendpoint",
+            "trace": [
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:55:5)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/S3UploadBucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3UploadBucketName",
+            "trace": [
+              "new LambdaTaskStack (/home/user/BHS/lambda-task/lib/lambda-task-stack.ts:58:5)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/bin/lambda-task.ts:5:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/user/BHS/lambda-task/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "phase4 (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/user/BHS/lambda-task/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/YourStackName/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:633:26)",
+              "process.emit (node:events:518:28)",
+              "process.emit (node:domain:488:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/home/user/BHS/lambda-task/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ],
+        "/YourStackName/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/user/BHS/lambda-task/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:633:26)",
+              "process.emit (node:events:518:28)",
+              "process.emit (node:domain:488:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/home/user/BHS/lambda-task/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "YourStackName"
+    }
+  }
+}
